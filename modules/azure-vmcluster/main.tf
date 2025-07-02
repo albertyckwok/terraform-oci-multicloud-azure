@@ -29,7 +29,7 @@ resource "azapi_resource" "cloudVmCluster" {
   name                      = var.vm_cluster_name
   schema_validation_enabled = false
   timeouts {
-    create = "24m"
+    create = "8h"
     delete = "8h"
   }
   body = {
