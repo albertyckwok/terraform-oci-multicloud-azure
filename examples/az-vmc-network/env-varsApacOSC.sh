@@ -1,0 +1,33 @@
+export TF_VAR_location="eastus"
+
+export TF_VAR_resource_group_id="/subscriptions/1d94dea0-b8be-4e56-b6d8-1d4984a03b09/resourceGroups/OSC_DBAzure"
+
+# Networking Resources
+export TF_VAR_network_resource_group_name="OSC_DBAzure"
+export TF_VAR_virtual_network_name="APACvnet1"
+export TF_VAR_virtual_network_address_space="10.71.0.0/16"
+export TF_VAR_delegated_subnet_address_prefix="10.71.1.0/24"
+export TF_VAR_delegated_subnet_name="delegate1"
+
+
+# Exadata Infra and VM Cluster
+export TF_VAR_exadata_infrastructure_id="/subscriptions/1d94dea0-b8be-4e56-b6d8-1d4984a03b09/resourceGroups/OSC_DBAzure/providers/Oracle.Database/cloudExadataInfrastructures/OSCInfra"
+export TF_VAR_exadata_infra_dbserver_ocids='["ocid1.dbserver.oc1.iad.anuwcljrm3j3d2yadyagkzwgxpoamf5qfvv2phspdgqfzzwwyyntczmfmlmq", "ocid1.dbserver.oc1.iad.anuwcljrm3j3d2yaluoustlprcp2s76ytclt5j6wz4dup4t4agnuederp3aq"]'
+
+export TF_VAR_vm_cluster_resource_name="OSC-APAC"
+export TF_VAR_vm_cluster_display_name="OSC-APAC"
+export TF_VAR_vm_cluster_hostname="OSC-APAC1"
+export TF_VAR_vm_cluster_gi_version="23.0.0.0"
+export TF_VAR_vm_cluster_cpu_core_count=16
+export TF_VAR_vm_cluster_data_collection_options_is_diagnostics_events_enabled=true
+export TF_VAR_vm_cluster_data_collection_options_is_health_monitoring_enabled=true
+export TF_VAR_vm_cluster_data_collection_options_is_incident_logs_enabled=true
+export TF_VAR_vm_cluster_data_storage_percentage=60
+export TF_VAR_vm_cluster_data_storage_size_in_tbs=30
+export TF_VAR_vm_cluster_db_node_storage_size_in_gbs=120
+export TF_VAR_vm_cluster_is_local_backup_enabled=false
+export TF_VAR_vm_cluster_is_sparse_diskgroup_enabled=true
+export TF_VAR_vm_cluster_license_model="BringYourOwnLicense"
+export TF_VAR_vm_cluster_memory_size_in_gbs=512
+export TF_VAR_vm_cluster_time_zone="UTC"
+export TF_VAR_vm_cluster_ssh_public_key="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC9YMz8/Q7zHlmYf0Jle9a6vpJROJusp/ikN7nQjmlC1vQ3Hve+iDjPJZwhADA4i857gtK8JMHEOmGiKqwgQsfZXJtGQErVOqyIqzvJ+lO0AUqZ2b2HMfvqjaN2VYGD0k4uQGEa5F0ADHG7YBH6qAJYrQxCMQl8OFOjYEBCIsMfs11VFhovLHuGS+TAsnN7mVjR0q7VEDQuSnJzBAbONx4zQxuw7fN15gOasb/6j5sPSFrYxjzxjbzbNl0kIuQZfVqWQ1ZSbn5xQjySKqql1ceCYNjazqQPqrQqEhTYFNzRRa33aQrOucWxAcRnQ/rl/ah3yb0ccHNnLrjmGQ7/YiB5LUFUi+Szf7Wlxrgm/B2AWvGAqxWRqhRbvK1qovMOCTcluV0bPdrm/bAu5M2KIlsvwoQzXobcjJbsx2qNPZQkqBjm5+ZnJ7V5d9z+h3MUuoo5ST2/5P2yivKr+t0j+YceN1yOdhMUZkYE/XyJtMYfriR77TYDM6dlu6ocogMQ/Dk= akwok@app0sca"
